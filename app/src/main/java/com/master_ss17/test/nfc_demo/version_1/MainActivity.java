@@ -24,6 +24,8 @@ import android.widget.ListView;
 import android.widget.Toast;
 
 import com.master_ss17.test.nfc_demo.R;
+import com.master_ss17.test.nfc_demo.core.Contact;
+import com.master_ss17.test.nfc_demo.core.ContactAdapter;
 
 import java.util.ArrayList;
 import java.util.Collections;

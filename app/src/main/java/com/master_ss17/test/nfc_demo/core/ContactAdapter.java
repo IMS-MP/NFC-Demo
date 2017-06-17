@@ -1,4 +1,4 @@
-package com.master_ss17.test.nfc_demo.version_1;
+package com.master_ss17.test.nfc_demo.core;
 
 import android.app.Activity;
 import android.content.Context;
@@ -11,6 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
 import com.master_ss17.test.nfc_demo.R;
+import com.master_ss17.test.nfc_demo.core.Contact;
 
 import java.util.List;
 
@@ -18,12 +19,12 @@ import java.util.List;
  * Created by dfritsch on 05.06.2017.
  */
 
-class ContactAdapter extends ArrayAdapter<Contact> {
+public class ContactAdapter extends ArrayAdapter<Contact> {
 
     private Context context;
     private List<Contact> data;
 
-    ContactAdapter(@NonNull Context context, @NonNull List<Contact> data) {
+    public ContactAdapter(@NonNull Context context, @NonNull List<Contact> data) {
         super(context, R.layout.layout_contact, data);
         this.context = context;
         this.data = data;
