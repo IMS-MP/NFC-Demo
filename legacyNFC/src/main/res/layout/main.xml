@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+
+<Button
+	android:id="@+id/friends"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Friendship Bar!"
+	android:layout_alignParentTop="true"
+	android:visibility="gone"
+/>
+
+<LinearLayout android:orientation="horizontal"
+    android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:layout_below="@id/friends"
+	android:id="@+id/enable_bar">
+<Button
+	android:id="@+id/toggle"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Enable vNfc"
+/>
+
+<Button
+	android:id="@+id/toggleTcp"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Enable Tcp"
+/>
+</LinearLayout>
+
+<LinearLayout
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="wrap_content"
+  android:layout_alignParentBottom="true"
+  android:id="@+id/auto_open_layout"
+  >
+<CheckBox
+  android:id="@+id/autolaunch"
+  android:layout_width="wrap_content"
+  android:layout_height="wrap_content"
+  android:text="Automatically open safe content"
+/>
+</LinearLayout>
+
+<LinearLayout
+	android:orientation="horizontal"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:layout_above="@id/auto_open_layout"
+	android:id="@+id/pair_layout"
+	>
+<Button
+	android:id="@+id/pair"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:text="Set Quick-Share Device"
+/>
+
+<Button
+	android:id="@+id/config"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="Show Configuration"
+	android:layout_above="@id/pair_layout"
+/>
+</LinearLayout>
+
+<TextView
+	android:id="@+id/status"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:text="LegacyNfc not running."
+	android:layout_above="@id/pair_layout"
+/>
+
+</RelativeLayout>

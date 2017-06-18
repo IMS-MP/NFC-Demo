@@ -1,0 +1,25 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.3"
+
+    defaultConfig {
+        /*applicationId "mobisocial.nfc"*/
+        minSdkVersion 7
+        targetSdkVersion 25
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+}
+
+dependencies {
+    compile 'com.android.support:support-annotations:25.3.1'
+    compile 'com.google.common.html.types:types:1.0.7'
+    compile 'org.eclipse.ecf:org.apache.commons.codec:1.9.0.v20170208-1614'
+}
